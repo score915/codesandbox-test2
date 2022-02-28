@@ -41,6 +41,8 @@
 // const message2 = `My name is ${val4.name}, age is ${val4.age}.`;
 // console.log(message2);
 
+/*
+
 function func1(str) {
   return str;
 }
@@ -100,3 +102,29 @@ const nameArr2 = ["Tanaka", "yamada", "Katoh"].map((name) => name);
 console.log(nameArr2);
 
 const nameArr3 = ["Tanaka", "yamada", "Katoh"].map((name) => console.log(name));
+
+const numArr = [1, 2, 3, 4, 5];
+
+const newNumArr = numArr.filter((num) => num % 2 === 1);
+
+console.log(newNumArr);
+
+console.log(nameArr2.map((name, index) => name + index.toString()));
+
+const newNameArr = nameArr2.map((name) => {
+  if (name.startsWith("Ta")) {
+    return "Mr." + name;
+  } else {
+    return name;
+  }
+});
+console.log(newNameArr);
+
+*/
+
+const num = 13000321;
+console.log(num.toLocaleString()); // ３桁カンマ区切りの文字列を返す
+
+const formattedNum =
+  typeof num === "number" ? num.toLocaleString() : "数値を入力してください";
+console.log(formattedNum);
